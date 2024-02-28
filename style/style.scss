@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #cecaca;
+  font-family: "League Spartan", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li,
+ul,
+ol {
+  list-style: none;
+}
+.wrapper {
+  background: #fff;
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+
+  .container {
+    display: flex;
+    .box {
+      width: 100%;
+      max-width: 840px;
+      height: 534px;
+      background-image: url(/img/Bitmap\ .svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .img {
+        display: none;
+      }
+      header {
+        padding: 63px 64px;
+
+        .nav {
+          display: flex;
+          justify-content: start;
+          column-gap: 56px;
+          align-items: center;
+          .burger {
+            display: none;
+          }
+          img {
+            display: inline;
+          }
+
+          ul {
+            color: #fff;
+            font-weight: 600;
+            line-height: 15px;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 31px;
+            .nav_list {
+              font-size: 14px;
+              line-height: 100%;
+              letter-spacing: 0.14em;
+
+              &:hover {
+                border-bottom: 1px solid #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .text {
+      max-width: 800px;
+      height: 534px;
+      .text_info {
+        padding: 120px 0 0 100px;
+        h1 {
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 44px;
+          letter-spacing: -2px;
+          max-width: 400px;
+          height: 91px;
+        }
+        p {
+          margin-top: 18px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          max-width: 400px;
+          height: 110px;
+          color: #a0a0a0;
+        }
+        span {
+          margin-top: 26px;
+          max-width: 162px;
+          line-height: 16px;
+          letter-spacing: 13px;
+          height: 16px;
+          font-weight: 500;
+          font-size: 15px;
+          &:hover {
+            cursor: pointer;
+            color: #a0a0a0;
+          }
+        }
+      }
+      .button {
+        display: flex;
+        gap: 0px;
+        .img {
+          margin-top: 100px;
+          &:hover {
+            cursor: pointer;
+            rect {
+              fill: #444444;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main_container {
+    display: flex;
+    max-width: 1440px;
+
+    .behruz {
+      display: flex;
+    }
+    .furniture_information {
+      padding: 68px 48px;
+      max-width: 580px;
+      height: 266px;
+      h1 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 7px;
+      }
+      p {
+        margin-top: 16px;
+        color: #a0a0a0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 375px;
+    height: 1500px;
+    .container {
+      display: grid;
+      .box {
+        position: relative;
+        width: 375px;
+        height: 240px;
+        background-size: 100%;
+        .button {
+          position: absolute;
+          top: 180px;
+          left: 263px;
+          display: flex;
+          gap: 0;
+          .img {
+            gap: 0px;
+            width: 56px;
+            height: 56px;
+            display: inline;
+          }
+        }
+
+        header {
+          padding: 48px 24px;
+          .nav {
+            .burger {
+              display: inline;
+              width: 20px;
+              height: 14px;
+            }
+            ul {
+              li {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .text {
+        width: 375px;
+        height: 410px;
+        padding: 60px 32px;
+
+        .img {
+          display: none;
+        }
+        .text_info {
+          padding: 0;
+          width: 375px;
+          height: 278px;
+          span {
+            margin-top: 500px;
+          }
+          .line {
+            margin-top: 41px;
+            display: inline;
+          }
+          h1 {
+            width: 311px;
+            height: 72px;
+            font-size: 40px;
+          }
+          p {
+            width: 311px;
+            height: 132px;
+          }
+        }
+      }
+    }
+  }
+  .main_container {
+    width: 375px;
+    // height: 303px;
+    .behruz {
+      flex-direction: row;
+      flex-wrap: wrap;
+      img {
+        margin-top: 31px;
+        width: 376px;
+        height: 268px;
+      }
+
+      .furniture_information {
+        padding: 49px 33px;
+        width: 375px;
+      }
+    }
+  }
+}
