@@ -119,7 +119,7 @@ ol {
   color: #a0a0a0;
 }
 .wrapper .container .text .text_info span {
-  margin-top: 26px;
+  margin-top: 56px;
   max-width: 162px;
   line-height: 16px;
   letter-spacing: 13px;
@@ -131,6 +131,9 @@ ol {
   cursor: pointer;
   color: #a0a0a0;
 }
+.wrapper .container .text .text_info .line {
+  margin-top: 26px;
+}
 .wrapper .container .text .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,7 +141,7 @@ ol {
   gap: 0px;
 }
 .wrapper .container .text .button .img {
-  margin-top: 100px;
+  margin-top: 73px;
 }
 .wrapper .container .text .button .img:hover {
   cursor: pointer;
@@ -176,7 +179,7 @@ ol {
 @media screen and (max-width: 800px) {
   .wrapper {
     width: 375px;
-    height: 1500px;
+    height: 1438px;
   }
   .wrapper .container {
     display: grid;
@@ -223,7 +226,7 @@ ol {
   }
   .wrapper .container .text .text_info {
     padding: 0;
-    width: 375px;
+    width: 311px;
     height: 278px;
   }
   .wrapper .container .text .text_info span {
@@ -254,7 +257,6 @@ ol {
         flex-wrap: wrap;
   }
   .main_container .behruz img {
-    margin-top: 31px;
     width: 376px;
     height: 268px;
   }

@@ -99,7 +99,7 @@ ol {
           color: #a0a0a0;
         }
         span {
-          margin-top: 26px;
+          margin-top: 56px;
           max-width: 162px;
           line-height: 16px;
           letter-spacing: 13px;
@@ -111,12 +111,15 @@ ol {
             color: #a0a0a0;
           }
         }
+        .line {
+          margin-top: 26px;
+        }
       }
       .button {
         display: flex;
         gap: 0px;
         .img {
-          margin-top: 100px;
+          margin-top: 73px;
           &:hover {
             cursor: pointer;
             rect {
@@ -154,7 +157,7 @@ ol {
 @media screen and (max-width: 800px) {
   .wrapper {
     width: 375px;
-    height: 1500px;
+    height: 1438px;
     .container {
       display: grid;
       .box {
@@ -202,7 +205,7 @@ ol {
         }
         .text_info {
           padding: 0;
-          width: 375px;
+          width: 311px;
           height: 278px;
           span {
             margin-top: 500px;
@@ -231,7 +234,7 @@ ol {
       flex-direction: row;
       flex-wrap: wrap;
       img {
-        margin-top: 31px;
+        // margin-top: 31px;
         width: 376px;
         height: 268px;
       }
